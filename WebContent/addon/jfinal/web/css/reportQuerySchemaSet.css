@@ -1,0 +1,339 @@
+div,ul,li,img {
+	margin: 0;
+	padding: 0;
+}
+
+#orgInput {
+	border: none;
+	width: 180px;
+}
+
+#leftNavigation {
+	float: left;
+}
+
+#leftTree {
+	height: 520px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.searchBox {
+	border: 1px solid #CCC;
+	padding-left: 5px;
+	width: 260px;
+	display: table-cell;
+}
+
+#left-div-item-container,
+#right-div-item-container {
+	width: 400px;
+	height: 520px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+#selectedFiled li {
+	list-style-type: none;
+	line-height: 18px;
+	padding-bottom: 4px;
+}
+
+#selectedFiled .label-span {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100px;
+	min-height: 14px;
+	margin-right: 10px;
+}
+
+.text-alias {
+	width: 150px;
+	height: 18px !important;
+}
+
+#itemName,#displayName {
+	text-align: center;
+}
+
+#selectedFiled .selected {
+	background-color: #D9EDF7 !important /*background-color: #FFE6B0;
+	border: 1px #FFB951 solid;
+	opacity: 0.8;*/
+}
+
+.relative {
+	position: relative;
+}
+
+.dropdown-menu {
+	border-radius: 1px;
+}
+
+
+.search-length {
+	width: 440px;
+}
+
+.querySchema_searchview_advanced {
+	border-top: 0px solid #CCC;
+}
+
+#selectedOrgNodes {
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	height: 530px;
+	overflow-y: auto;
+}
+
+.template_field_edit {
+	display: table-cell;
+	width: 600px;
+	display: table-cell;
+	margin: 5px !important;
+}
+
+.template_field {
+	margin: 10px;
+}
+
+.template_field div {
+	margin-bottom: 5px;
+	width: 100px;
+	height: 25px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	line-height: 25px;
+}
+
+
+
+.emp_searchview {
+	margin-left: 60px;
+}
+
+.searchview_list div {
+	background: transparent;
+	cursor: pointer;
+}
+
+#condition-area3 {
+	margin-bottom: 15px;
+}
+
+.searchview_pressed {
+	background: #D9EDF7 !important;
+}
+
+.cmpItem_field {
+	
+}
+
+.cmpItem_field div {
+	width:360px;
+	margin: 2px 2px 0 5px;
+}
+
+.cmpItem_field input {
+	width: 215px;
+}
+
+#left-div-org-container,
+#middle-div-org-container,
+#right-div-org-container,
+#left-div-item-container,
+#middle-div-item-container,
+#right-div-item-container,
+#arrowup-div-item-container,
+#arrowremove-div-item-container,
+#arrowremove-div-org-container,
+#arrowdown-div-item-container
+{
+	float: left;
+}
+#arrowremove-div-item-container,
+#arrowremove-div-org-container{
+	margin-left:-5px;
+}
+
+#left-div-org-container,
+#left-div-item-container {
+	width: 26%;
+}
+
+#middle-div-org-container {
+	width: 5%;
+	height: 530px;
+}
+
+#right-div-org-container {
+	width:65%;
+}
+
+#moveOrgToRight,
+#moveItemToRight,
+#arrowup-div-item-container {
+	line-height: 530px;
+	margin: 0 30px;
+}
+#arrowup-div-item-container{
+	margin: 0 10px;
+}
+
+#rangetab,
+#orgRange,
+#itemRange,
+#dataRange {
+	margin: 0 15px;
+}
+
+#itemhead {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 8px;
+	line-height:30px;
+	color: #666;
+	overflow: hidden;
+	background: #EEE;
+}
+
+#selectedFiled div {
+	position: relative;
+}
+
+#searchPanel {
+	display:none;
+}
+
+#left-div-org-container{
+	margin-top: 5px;
+	border: 1px solid #ccc;
+}
+
+.schemaTitle {
+	margin-left:-29px;
+	color: #999999;
+}
+
+#clearorg{
+	margin-left: 10px;
+	line-height: 530px;
+}
+
+#clearitem{
+	line-height: 530px;
+}
+.searchview_add span{
+	cursor: pointer;
+}
+
+#middle-org-div,#middle-item-div{
+	height: 26px;
+	width: 26px;
+	cursor: pointer;
+}
+#middle-div-org-container,
+#middle-div-item-container,
+#arrowremove-div-item-container,
+#arrowremove-div-org-container{
+	margin-top: 220px;
+	height: 27px;
+	width: 27px;
+	border: 1px dashed #D0D0D0;
+	margin-right: 6px;
+	margin-left: 6px;
+	cursor: pointer;
+
+}
+
+#arrowup-div-item-container,
+#arrowdown-div-item-container{
+	margin-top: 220px;
+	height: 38px;
+	width: 30px;
+	border: 1px dashed #D0D0D0;
+	margin-right: 6px;
+	margin-left: 6px;
+	cursor: pointer;
+
+}
+
+#middle-div-org-container:hover,
+#middle-div-item-container:hover,
+#arrowremove-div-item-container:hover,
+#arrowremove-div-org-container:hover,
+#arrowup-div-item-container:hover,
+#arrowdown-div-item-container:hover
+{
+	background-color:#cccccc;
+}
+
+
+#arrowremove-div-item-container,
+#arrowremove-div-org-container{
+	margin-top: 220px;
+	height: 27px;
+	width: 27px;
+	border: 1px dashed #D0D0D0;
+	margin-right: 6px;
+	margin-left: 6px;
+	cursor: pointer;
+
+}
+#moveOrgToRight,
+#moveItemToRight,
+#arrowup-div,
+#clearitem,
+#clearorg{
+	margin: 10px;
+	line-height: 0;
+}
+
+.icon-star_color {
+	color:blue;
+}
+
+#arrowremove-div-item-container{
+	margin-top: 265px;
+	margin-left: -37px;
+	width: 30px;
+}
+/**
+*=================================================
+*项目选择上下移动图标
+*=================================================
+**/
+#arrowup-div-item-container,
+#arrowdown-div-item-container,
+#arrowremove-div-item-container{
+	line-height: 0;
+	margin-top: 300;
+	height: 30px;
+	width: 30px;
+}
+
+/**顶部向上图标*/
+#arrowup-div-item-container{
+	margin-top: 184px;
+}
+/**中间向下图标*/
+#arrowdown-div-item-container{
+	margin-left: -38px;
+}
+/**底部删除图标*/
+#arrowremove-div-item-container{
+	margin-top:255px;
+	margin-left: -38px;
+}
+
+#moveItemToUp,
+#moveItemToDown,
+#clearitem{
+	line-height: 30px;
+	margin-left: 10px;
+}

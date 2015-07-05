@@ -1,0 +1,89 @@
+<#macro layout>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>胡成志</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/addon/sys/web/jslib/bootstrap-3.3.4/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="/addon/resume/web/css/widget.css" rel="stylesheet">
+<script src="/addon/sys/web/jslib/jquery-1.11.3.js"></script>
+<script src="/addon/sys/web/jslib/bootstrap-3.3.4/js//bootstrap.min.js"></script>
+<style>
+ul.nav-pills {
+	top: 60px;
+	position: fixed;
+}
+
+.container {
+	width:100%;
+	margin-top: 50px;
+	position: absolute;
+}
+
+.navbar-static-top {
+	position: fixed;
+	width: 100%;
+}
+
+.section-content div {
+	min-height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+	#section1,#section2,#section3,#section41,#section42 {
+		margin-left: 150px;
+	}
+}
+</style>
+</head>
+<body data-target="#myScrollspy" data-offset="10" data-spy="scroll">
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">胡成志</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/resume/index">首页</a></li>
+				<li><a href="/resume/introduction">个人介绍</a></li>
+				<li><a href="/resume/learning">学习经历</a></li>				
+				<li class="dropdown"><a
+					href="/resume/working"
+					class="dropdown-toggle" data-toggle="dropdown"> 工作经历 <b
+						class="caret"></b>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">金蝶软件</a></li>
+						<li><a href="#">山石网科</a></li>
+						<li><a href="#">深圳气象</a></li>
+						<li class="divider"></li>
+						<li><a href="#">工作室</a></li>
+						<li class="divider"></li>
+						<li><a href="#">软件中心</a></li>
+					</ul></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> 项目经验 <b class="caret"></b>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">SHR</a></li>
+						<li><a href="#">HSP</a></li>
+						<li><a href="#">深圳天气</a></li>
+						<li class="divider"></li>
+						<li><a href="#">志愿者</a></li>
+						<li class="divider"></li>
+						<li><a href="#">科技学院</a></li>
+					</ul></li>
+				<li><a href="/resume/contact">联系方式</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container"><#nested></div>
+</body>
+<script>
+	var pathname = window.location.pathname;
+	$("ul.navbar-nav li").removeClass("active");
+	$("ul.navbar-nav li a[href='"+pathname+"']").parent().addClass("active");
+</script>
+</html>
+</#macro>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+	<name>HRCmpCalDataQuery</name>
+	<version>sHRV1.5!20140123.001</version>
+	<alias>薪酬核算</alias>
+	<remark><![CDATA[员工薪酬档案、薪酬核算、薪酬统合分析、薪酬业务设置、薪酬基础设置等]]></remark>
+	<author>Kingdee</author>
+	<authorId>A00001</authorId>
+</app>

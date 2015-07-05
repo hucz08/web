@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://libs.baidu.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <style>
+  ul.nav-pills {top:60px; position: fixed;}
+  .container {margin-top:50px;position: absolute;}
+  .navbar-static-top {position: fixed;width:100%;}
+  .section-content div {height: 250px;font-size: 28px;}
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  </style>
+</head>
+<body data-target="#myScrollspy" data-offset="10" data-spy="scroll">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="#">胡成志</a>
+   </div>
+   <div>
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="#">首页</a></li>
+         <li><a href="#">个人介绍</a></li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               	学习经历 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">大学</a></li>
+               <li><a href="#">高中</a></li>
+               <li><a href="#">初中</a></li>
+               <li class="divider"></li>
+               <li><a href="#">小学</a></li>
+               <li class="divider"></li>
+               <li><a href="#">学前教育</a></li>
+            </ul>
+         </li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               	工作经历 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">金蝶软件</a></li>
+               <li><a href="#">山石网科</a></li>
+               <li><a href="#">深圳气象</a></li>
+               <li class="divider"></li>
+               <li><a href="#">工作室</a></li>
+               <li class="divider"></li>
+               <li><a href="#">软件中心</a></li>
+            </ul>
+         </li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               	项目经验 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">SHR</a></li>
+               <li><a href="#">HSP</a></li>
+               <li><a href="#">深圳天气</a></li>
+               <li class="divider"></li>
+               <li><a href="#">志愿者</a></li>
+               <li class="divider"></li>
+               <li><a href="#">科技学院</a></li>
+            </ul>
+         </li>
+         <li><a href="#">联系方式</a></li>
+      </ul>
+   </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>                     
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 section-content">
+      <div id="section1">    
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section2"> 
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="section3">         
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section41">         
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
+      <div id="section42">         
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>                                      

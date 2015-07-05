@@ -1,0 +1,140 @@
+#sidebar .sidebar-title {
+	font-size: 14px;
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+#sidebar .sidebar-tree {
+	min-height: 370px;
+	max-height: 370px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#editArea {
+	padding-right: 20px;
+}
+
+#editArea .formula-area {
+	margin-top: 10px;
+}
+
+.dialog-edit-table {
+	margin-top: 0!important;
+}
+
+/* button style */
+.number-btn {
+	width: 24px!important;
+	padding-left: 15px!important;
+	margin-left: 1px!important;
+	margin-bottom: 1px;
+}
+
+.zero-btn {
+	width: 71px!important;
+	margin-left: 1px!important;
+}
+
+.text-btn {
+	width: 55px;
+	margin-left: 1px!important;
+}
+
+.op-btn {
+	margin-bottom: 1px;
+}
+
+.twochar-btn {
+	width: 35px!important;
+	padding-left: 10px!important;
+	margin-left: 1px!important;
+	margin-bottom: 1px;
+}
+
+.colon-btn {
+	padding-left: 32px!important;
+	margin-left: 1px!important;
+}
+
+/* icheck style */
+#seniorBtn {
+	text-align: center;
+	margin-bottom: 4px;
+	margin-top: -5px;
+}
+
+.icheckbox_minimal-grey {
+	vertical-align: middle;
+	margin-left: 16px;
+}
+
+.iradio_minimal-grey, .icheckbox_minimal-grey, label {
+	display: inline-block;
+}
+
+.iradio_minimal-grey {
+	margin-left: 15px;
+	margin-right: 3px;
+	margin-bottom: 4px;
+	vertical-align: text-top;
+}
+
+#seniorDialog .intro-text {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#seniorDialog .intro-div {
+	border-top: 1px solid #ccc;
+	margin: 5px;
+	margin-top: 2px;
+	padding: 5px;
+	max-height: 80px;
+	overflow-y: auto;
+}
+
+/* group table style */
+.ui-jqgrid tr.jqgroup { 
+	border: 0!important;
+	height: 30px;
+}
+
+.ui-jqgrid tr.jqgroup td {
+	border-bottom: 1px solid #eee!important;
+	border-right: 0!important;
+}
+
+.ui-jqgrid .ui-jqgrid-hdiv {
+	background: none!important;
+}
+
+/* tab style */
+.btn-tab-div {
+	height: 24px;
+	border-bottom: solid 1px #CCC;
+}
+
+.btn-tab {
+	color: #ccc;
+	background: #FFF;
+	margin-right: 0px;
+}
+
+.btn-tab:hover {
+	background: #FFF;
+	margin-right: 0px;
+	color: #428bca;
+}
+
+.btn-tab-current {
+	background: #FFF;
+	border: solid 1px #CCC;
+	border-bottom: none;
+	margin-right: 0px;
+	color: #428bca;
+	height: 25px;
+}

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+<item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬核算-费用分摊',null,'core',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-30 09:17:00'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-03 14:52:49'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','DYBAuNzoTRu0xoyDxHAnCBRypnI=','shr.cmpCal.costBear','shr.cmpCal.costBear',?,1,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0" encoding="gb2312"?&gt;
+&lt;main&gt;
+    &lt;handler class="com.kingdee.shr.compensation.web.handler.CmpCalHandler"/&gt;
+    &lt;header&gt;
+        &lt;title value="薪酬成本分摊"/&gt;
+	&lt;style href="${appPath}/${appCode}/web/js/keyboard/keyboard.css" /&gt;
+	&lt;script src="${appPath}/${appCode}/web/js/keyboard/jquery.keyboard.js"&gt;&lt;/script&gt;
+&lt;script src="${appPath}/${appCode}/web/js/cmpSchemePersonList.js"&gt;&lt;/script&gt;
+&lt;script src="${appPath}/${appCode}/web/js/cmpCal.js"&gt;&lt;/script&gt;
+&lt;script src="${appPath}/twoCertification/web/js/cmpAuth.js"&gt;&lt;/script&gt;
+&lt;style href="${appPath}/${appCode}/web/css/cmpSchemePerson.css"&gt;&lt;/style&gt;
+&lt;script src="${appPath}/${appCode}/web/js/searchView.js"&gt;&lt;/script&gt;
+&lt;style href="${appPath}/${appCode}/web/css/cmpSearch.css"&gt;&lt;/style&gt;
+&lt;jsClass name="shr.compensation.CmpCal"/&gt;
+        &lt;toolbar&gt;            
+            &lt;button name="exportCostBearList" caption="导出" class="btn-primary"/&gt;          
+	   &lt;!--&lt;button name="query" caption="查询配置" class="btn-primary"/&gt;--&gt;
+&lt;div id="gridPager1"&gt;&lt;/div&gt; 
+        &lt;/toolbar&gt;
+    &lt;/header&gt;
+    &lt;body&gt;
+&lt;div id="queryDiv"&gt;&lt;/div&gt;
+        &lt;div style="min-height:500px;" id="CmpCalGridList_div"&gt;
+            &lt;table id="CmpCalGridList" class="list_table"&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/main&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+   <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬明细表',null,'core',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-10-28 11:02:22'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-31 11:15:55'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','B6YHRUVZRgq6p7NHm29OIRRypnI=','shr.compensation.cmpCalDetailReport','shr.compensation.cmpCalDetailReport',?,0,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;main&gt;
+	&lt;header&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpReportBase.js"&gt;&lt;/script&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpCalDetailReport.js"&gt;&lt;/script&gt;
+		&lt;jsClass name="shr.compensation.CmpCalDetailReport" /&gt;
+		&lt;handler class="com.kingdee.shr.compensation.web.handler.CompensationDetailReportHandler" /&gt;
+	             &lt;button name="advQuery" caption="高级查询" class="btn-primary"/&gt;
+	             &lt;button name="exportToExcel" caption="导出" class="btn-primary"/&gt;
+	&lt;/header&gt;
+	&lt;body&gt;
+		&lt;div id="adv-div-continer"&gt;&lt;/div&gt;
+		&lt;div id="gridPager1"&gt;&lt;/div&gt;
+		&lt;table id="reportGrid"&gt;&lt;/table&gt;
+	&lt;/body&gt;
+&lt;/main&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+ <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬发放表','com.kingdee.shr.compensation.app.CmpReportQuerySchema','core',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-10-29 15:37:34'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-09 18:34:57'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','QXC5X0bvQcux8LuIjsnz4RRypnI=','com.kingdee.shr.compensation.app.CmpReportQuerySchema','com.kingdee.shr.compensation.app.CmpReportQuerySchema',?,0,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;main&gt;
+&lt;header&gt;
+	&lt;script src="${appPath}/${appCode}/web/js/reportQuerySchemaSet.js"&gt;&lt;/script&gt;
+	&lt;jsClass name="shr.compensation.ReportQuerySchemaSet" /&gt;
+	&lt;style href="${appPath}/${appCode}/web/css/reportQuerySchemaSet.css" rel="stylesheet"/&gt;
+	&lt;handler class="com.kingdee.shr.compensation.web.handler.ReportQuerySchemaSetHandler" /&gt;
+	&lt;title value="薪酬发放表" /&gt;
+	&lt;button name="addNew" visible="false" /&gt;
+	&lt;button name="delete" visible="false" /&gt;
+	&lt;button name="confirm" caption="确定" class="btn-primary"/&gt;
+	&lt;!--button name="cancle" caption="取消"/--&gt;  
+	&lt;button name="save" caption="保存查询方案"/&gt;
+	&lt;input type="hidden" id="QueryschemaId" value=""/&gt;	
+&lt;/header&gt;
+
+&lt;body&gt;
+&lt;!-- 查询方案保存对话框 start --&gt;
+&lt;div class="relative"&gt;
+&lt;div class="relative"&gt;
+	&lt;div class="oe_searchview_drawer dropdown-menu search-length"&gt;
+		&lt;div class="searchview_add"&gt;&lt;i class="icon-plus icon-gray"&gt;&lt;/i&gt;
+			&lt;span style="padding-left: 5px;color: gray;"&gt;新建方案&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="oe_searchview_advanced"&gt;
+			&lt;div&gt;
+				&lt;div style="margin: 10px 0px 10px 0px;"&gt;
+					&lt;i class="custom-filter"&gt;&lt;/i&gt;
+					&lt;span style="color: gray;"&gt;保存为查询方案&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div style="margin-left: 10px;margin-bottom: 20px;"&gt;
+					&lt;input id="querySchema_searchview_custom_input" placeholder="方案名称" 
+					class="input-height input-xlarge" type="text"/&gt;
+					&lt;button name="sqSave" class="btn-primary" type="button" caption="保存"/&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 查询方案保存对话框 end --&gt;
+
+&lt;!-- 方案列表区域 start --&gt;
+&lt;div id="searchview" class="span12 offset0 "&gt;
+	&lt;div class="emp_searchview"&gt;
+		&lt;span class="schemaTitle"&gt;查询方案：&lt;/span&gt;&lt;span class="searchview_list"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 方案列表区域 end --&gt;
+	&lt;div id="field_area"&gt;
+		&lt;field name="period" dataType="F7" 
+			uipk="com.kingdee.shr.compensation.app.Period.F7" required="true" label="统计期间" &gt;
+		&lt;/field&gt;
+		&lt;field name="type" label="报表类型" required="true"/&gt;
+	&lt;/div&gt;
+	
+	&lt;!-- 页签区域start --&gt;
+	&lt;div id="range-area" class="row-fluid"&gt;
+	&lt;ul id="rangetab" class="nav nav-tabs"&gt;
+		&lt;li id="orgtab" class="active"&gt;&lt;a href="#orgRange" data-toggle="tab"&gt;组织范围&lt;/a&gt;&lt;/li&gt;
+		&lt;li id="itemtab"&gt;&lt;a href="#itemRange" data-toggle="tab"&gt;项目范围&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="tab-content"&gt;
+	&lt;div class="tab-pane  active" id="orgRange"&gt;
+		
+		&lt;div id="left-div-org-container"&gt;
+			
+			&lt;div id="searchPanel"&gt;
+				&lt;div class="searchBox"&gt;
+				&lt;span&gt;&lt;i class="icon-search icon-gray"&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;input placeholder="请输入组织名称" class="input-height" 
+					style="border: none;width: 180px;"&gt;
+				&lt;/input&gt;
+				&lt;/div&gt;
+				&lt;div style="display: table-cell;padding-left: 10px;"/&gt;
+			&lt;/div&gt;									
+			
+			&lt;div id="leftTree" class="ztree"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div id="middle-div-org-container"&gt;
+			&lt;div id="middle-org-div"&gt;
+				&lt;i id="moveOrgToRight"  class="icon-arrow-right"&gt;&lt;/i&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="right-div-org-container"&gt;
+
+			&lt;div id="selectedOrgNodes" &gt;
+				&lt;div class="template_field ui-sortable" style=""/&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id="arrowremove-div-org-container"&gt;
+			 &lt;i id="clearorg"  class="icon-remove" title="清空已选组织"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="itemRange"&gt;
+		&lt;div id="left-div-item-container"&gt;
+			&lt;div id="left-item-div"&gt;
+				&lt;div id="itemRangeTree" class="ztree"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div id="middle-div-item-container"&gt;
+			&lt;div id="middle-item-div" class="arrow-icon"&gt;
+				&lt;i id="moveItemToRight"  class="icon-arrow-right" title="向右移动"&gt;&lt;/i&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="right-div-item-container"&gt;
+			&lt;div id="right-item-div"&gt;
+				&lt;div id="itemhead"&gt;
+					&lt;div id="itemName" class="row-fluid span5"&gt;项目名称&lt;/div&gt;
+					&lt;div id="displayName" class="row-fluid span7"&gt;显示名称&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="cmpItem_field" id="selectedFiled"/&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="arrowup-div-item-container"&gt;
+			&lt;i id="moveItemToUp" class="icon-arrow-up" title="向上移动"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+		&lt;div id="arrowdown-div-item-container"&gt;
+			&lt;i id="moveItemToDown" class="icon-arrow-down" title="向下移动"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+		&lt;div id="arrowremove-div-item-container"&gt;
+				&lt;i id="clearitem"  class="icon-remove" title="清空已选项目" &gt;&lt;/i&gt;
+		&lt;/div&gt;
+		
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+
+&lt;/body&gt;
+&lt;/main&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+ <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬汇总表',null,'core',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-10-28 11:03:23'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-31 11:15:55'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','Qem2VQM+Q8294YDepm3z6hRypnI=','shr.compensation.cmpCalSumReport','shr.compensation.cmpCalSumReport',?,0,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;main&gt;
+	&lt;header&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpReportBase.js"&gt;&lt;/script&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpCalSumReport.js"&gt;&lt;/script&gt;
+		&lt;jsClass name="shr.compensation.CmpCalSumReport" /&gt;
+		&lt;style href="${appPath}/${appCode}/web/css/cmpCalSumReport.css" rel="stylesheet"/&gt;
+		&lt;handler class="com.kingdee.shr.compensation.web.handler.CompensationSumReportHandler" /&gt;
+		 &lt;button name="advQuery" caption="高级查询" class="btn-primary"/&gt;
+	         &lt;button name="exportToExcel" caption="导出" class="btn-primary"/&gt;
+	&lt;/header&gt;
+
+	&lt;body&gt;
+		&lt;field name="downSum" label="统计时包含下级组织" dataType="boolean" value="" /&gt;
+		&lt;group&gt;
+			&lt;div id="adv-div-continer"&gt;&lt;/div&gt;
+			&lt;div id="gridPager1"&gt;&lt;/div&gt;
+			&lt;table id="reportGrid"&gt;&lt;/table&gt;
+		&lt;/group&gt;
+	&lt;/body&gt;
+
+&lt;/main&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+   <item>
+    <sql>insert into T_BS_Service (FNAME_L1 , FNAME_L2 , FNAME_L3 , FALIAS , FTYPE , FCATEGORYID , FSUBCATEGORYID , FBUSROLES , FSYSROLES , FURLTYPE , FURLVALUE , FCONTENT , FDESCRIPTION_L1 , FDESCRIPTION_L2 , FDESCRIPTION_L3 , FICONTYPE , FICONNAME , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FPERMISSIONID , FINDEX , FOSFNAME) values(null,N'薪酬发放表',null,N'薪酬发放表','task','Z4Ap5CbeQR+EAYEy/OZtWKYoOi4=','q3WjtsVETa6F2Z3jcrLqBdj/1C4=',null,null,'view','com.kingdee.shr.compensation.app.CmpReportQuerySchema',?,null,N'依据设置的组织范围、项目范围，分别显示薪酬明细表与汇总表',null,'url',null,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-10-31 17:42:53'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-18 15:53:31'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','80mE38m0TkSIp4mxCqFQzfI9KRA=','180ccb06-caa6-49e2-804c-63f5c796056aPERMITEM',34,null)</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+  <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'组织列表_薪酬报表组织F7','com.kingdee.eas.basedata.org.app.AdminOrgUnit','list',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-07 12:26:25'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-07 12:26:45'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','77ZMWQ4HReCMCg7OfViv8hRypnI=','shr.org.AdminOrgUnit_cmp_list','shr.org.AdminOrgUnit_cmp_list',?,1,null,'appCode=orgnization')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;navigateList&gt;
+&lt;title value="组织信息" /&gt;
+     &lt;handler class="com.kingdee.eas.hr.org.web.handler.OrgUnitListHandler"/&gt;
+     &lt;script src="${appPath}/${appCode}/web/js/shr/org/adminOrgList.js"&gt;&lt;/script&gt;
+     &lt;jsclass name="shr.org.adminOrgList"/&gt;
+      &lt;header&gt;
+              &lt;searchView uipk="com.kingdee.eas.basedata.org.app.AdminOrgUnit.search"/&gt;
+              &lt;button name="delete" visible="false"/&gt;
+	     &lt;dropDownButton name="more" caption="更多"&gt;
+		    &lt;button name="sealUp" caption="封存" /&gt;
+              	     &lt;button name="unSealUp" caption="启用" /&gt;
+                     &lt;button name="exportToExcel" caption="导出" /&gt;
+                     &lt;button name="deletePosition" caption="删除" /&gt;
+	     &lt;/dropDownButton&gt;
+	    
+       &lt;/header&gt;
+	&lt;treeNavigation&gt;
+		&lt;navDomain&gt; [('id','=','$UserAdminRangeFilter')] &lt;/navDomain&gt;
+	&lt;/treeNavigation&gt;
+&lt;grid name="AdminOrgUnit_List" sorterItems="longNumber,number"&gt;
+	&lt;field name="number" label="组织编码"&gt;&lt;/field&gt;
+	&lt;field name="name" label="组织名称"&gt;&lt;/field&gt;
+	&lt;field name="unitLayerType.name" label="组织层级"&gt;&lt;/field&gt;
+	&lt;domain&gt; [('id','=','$UserAdminRangeFilter')] &lt;/domain&gt;
+	&lt;editURI value="shr.org.AdminOrgUnit_edit" /&gt;
+&lt;/grid&gt;
+&lt;requireAddNew&gt;false&lt;/requireAddNew&gt;
+&lt;/navigateList&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+    <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'统计期间F7','com.kingdee.shr.compensation.app.Period','F7',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-09-04 09:56:49'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-09 11:27:56'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','KJxVNc32Sc+izS9Uh/Z7YRRypnI=',null,'com.kingdee.shr.compensation.app.Period.F7',?,1,null,null)</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;list name="PeriodF7"  sorterItems="beginDate desc"&gt;
+	&lt;requireAddNew&gt;false&lt;/requireAddNew&gt;
+	 &lt;field name="number"&gt;&lt;/field&gt;
+            &lt;field name="name"&gt;&lt;/field&gt;
+            &lt;field name="periodYear"&gt;&lt;/field&gt;
+            &lt;field name="periodMonth" label="归属月度"&gt;&lt;/field&gt;           
+            &lt;field name="beginDate" label="起始日期"&gt;&lt;/field&gt;
+            &lt;field name="endDate"&gt;&lt;/field&gt;  
+&lt;/list&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬发放工作流单据','com.kingdee.shr.compensation.app.CmpWorkFlowMainBill','form',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-26 14:30:52'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-10 16:06:59'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','GJYHjfZjRY+gXi3Gsrf3jBRypnI=',null,'com.kingdee.shr.compensation.app.CmpWorkFlowMainBill.form',?,1,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;form name="cmpDetailBill-form" col="12"&gt;
+	&lt;handler class="com.kingdee.shr.compensation.web.handler.CmpWorkFlowMainEditHandler"/&gt;
+	&lt;header&gt;
+		&lt;toolbar&gt;
+			&lt;button name="submit" visible="true" /&gt;
+			&lt;button name="workFlowDiagram" visible="true" /&gt;
+			&lt;button name="auditResult" visible="true" /&gt;
+		&lt;/toolbar&gt;
+	    &lt;script src="${appPath}/${appCode}/web/js/cmpWorkFlowBillBase.js"&gt;&lt;/script&gt;
+	    &lt;jsClass name="shr.compensation.CmpWorkFlowBillBase"/&gt;
+	&lt;/header&gt;
+	&lt;group&gt;
+		&lt;field name="number"  required='true'/&gt;
+		&lt;field name="cmpPeriod"  uipk="com.kingdee.shr.compensation.app.CmpPeriod.F7"  readonly='true'/&gt;
+		&lt;field name="calScheme"  readonly='true'/&gt;
+		&lt;field name="time"  readonly='true'/&gt;
+		 &lt;field name="billState" type="hidden"&gt;&lt;/field&gt;
+		&lt;field name="description" ctrl="textArea" colspan="2" rows="2" label="发放说明" max_length="255"/&gt;
+	&lt;/group&gt;
+	&lt;group&gt;
+		&lt;!-- 页签区域start --&gt;
+		&lt;div id="range-area" class="row-fluid"&gt;
+			&lt;ul id="rangetab" class="nav nav-tabs"&gt;
+				&lt;li id="personalDetailtab" class="active"&gt;
+					&lt;a href="#personalDetailtabRange" data-toggle="tab" uipk="personalDetailGrid"&gt;个人明细&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li id="orgSumtab"&gt;
+					&lt;a href="#orgSumtabRange" data-toggle="tab" uipk="cmpSendOrgSumGrid"&gt;组织汇总&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div class="tab-content" style="margin-top:-15px;"&gt;
+				&lt;div class="tab-pane  active" id="personalDetailtabRange"&gt;
+					&lt;iframe id="iframe_detail" src="" style="width:99%;border:none" scrolling="no"&gt;
+					&lt;/iframe&gt;
+				&lt;/div&gt;
+				&lt;div class="tab-pane" id="orgSumtabRange"&gt;
+					&lt;iframe id="iframe_orgSum" src="" style="width:99%;border:none" scrolling="no"&gt;
+					&lt;/iframe&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- 页签区域end --&gt;
+	&lt;/group&gt;
+&lt;/form&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬报表-聚合表',null,'core',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-07 17:26:28'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-07 17:27:07'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','2B6vuzGVRYKSjlGNgdbWahRypnI=','shr.compensation.cmpAggregateReport','shr.compensation.cmpAggregateReport',?,1,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;main&gt;
+	&lt;header&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpReportBase.js"&gt;&lt;/script&gt;
+		&lt;script src="${appPath}/${appCode}/web/js/cmpCalAggregateReport.js"&gt;&lt;/script&gt;
+		&lt;jsClass name="shr.compensation.CmpCalAggregateReport" /&gt;
+		&lt;style href="${appPath}/${appCode}/web/css/cmpCalSumReport.css" rel="stylesheet"/&gt;
+		&lt;handler class="com.kingdee.shr.compensation.web.handler.CompensationAggregateReportHandler" /&gt;
+		 &lt;button name="advQuery" caption="高级查询" class="btn-primary"/&gt;
+	         &lt;button name="exportToExcel" caption="导出" class="btn-primary"/&gt;
+	&lt;/header&gt;
+
+	&lt;body&gt;
+		&lt;group&gt;
+			&lt;div id="adv-div-continer"&gt;&lt;/div&gt;
+			&lt;div id="gridPager1"&gt;&lt;/div&gt;
+			&lt;table id="reportGrid"&gt;&lt;/table&gt;
+		&lt;/group&gt;
+	&lt;/body&gt;
+
+&lt;/main&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+    <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬发放工作流查询视图','com.kingdee.shr.compensation.app.CmpWorkFlowMainBill','search',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-13 11:16:39'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-13 11:16:39'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','SHehqyzUTVqPxgIiHOL+yhRypnI=',null,'com.kingdee.shr.compensation.app.CmpWorkFlowMainBill.search',?,1,null,null)</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;search&gt;
+	&lt;quickSearch&gt;
+		&lt;field name="number" label="单据编号"/&gt;
+	&lt;/quickSearch&gt;
+	&lt;advancedSearch&gt;
+		&lt;field name="number"/&gt;
+		&lt;field name="cmpPeriod.name" label="薪酬期间名称"&gt;&lt;/field&gt;
+		&lt;field name="calScheme.name" label="核算规则名称"&gt;&lt;/field&gt;
+		&lt;field name="time" label="核算次数" width="80"&gt;&lt;/field&gt;
+		&lt;field name="billState" label="单据状态" &gt;&lt;/field&gt;
+	&lt;/advancedSearch&gt;
+&lt;/search&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+   <item>
+    <sql>insert into S_BS_UIView (FNAME , FMODEL , FTYPE , FCONTENT , FCREATORID , FCREATETIME , FLASTUPDATEUSERID , FLASTUPDATETIME , FCONTROLUNITID , FID , FURI , FUIPK , FEXTEND , FINNER , FTREEID , FVARDEFINE) values(N'薪酬发放工作流单据列表','com.kingdee.shr.compensation.app.CmpWorkFlowMainBill','list',?,'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2013-12-26 19:42:52'},'00000000-0000-0000-0000-00000000000013B7DE7F',{ts'2014-01-13 11:18:23'},'lHDbB+kPSvqu8bTwCEh3O8znrtQ=','duT28Nh0QaeTmVtp/tZlEhRypnI=',null,'com.kingdee.shr.compensation.app.CmpWorkFlowMainBill.list',?,1,null,'appCode=compensation')</sql>
+    <para>
+      <FCONTENT dataInFile="false" type="9">&lt;?xml version="1.0"?&gt;
+&lt;list name="cmpsendBill"&gt;
+	&lt;header&gt;
+	    &lt;script src="${appPath}/${appCode}/web/js/cmpWorkFlowBillList.js"&gt;&lt;/script&gt;
+	    &lt;jsClass name="shr.compensation.CmpWorkFlowBillList"/&gt;
+	   &lt;handler class="com.kingdee.shr.compensation.web.handler.CmpWorkFlowMainListHandler" /&gt;
+	  &lt;searchView uipk="com.kingdee.shr.compensation.app.CmpWorkFlowMainBill.search" /&gt;
+	&lt;/header&gt;
+	&lt;title value="薪酬发放工作流单据列表"/&gt;
+	&lt;field name="cmpPeriod.name" label="薪酬期间名称"&gt;&lt;/field&gt;
+	&lt;field name="calScheme.name" label="核算规则名称"&gt;&lt;/field&gt;
+	&lt;field name="time" label="核算次数" width="80"&gt;&lt;/field&gt;
+	&lt;field name="billState" label="单据状态" &gt;&lt;/field&gt;
+	&lt;field name="bizDate"&gt;&lt;/field&gt;
+&lt;/list&gt;</FCONTENT>
+      <FEXTEND dataInFile="false" type="9"/>
+    </para>
+  </item>
+  
+</doc>

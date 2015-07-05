@@ -1,0 +1,62 @@
+<#include "/addon/resume/web/common/layout.html"/> <@layout>
+<div class="row">
+	<nav class="col-sm-2" id="myScrollspy">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="#section1">联系方式</a></li>
+			<li class=""><a href="#section2">在线留言</a></li>
+		</ul>
+	</nav>
+	<div class="col-sm-10">
+		<div class="col-sm-10">
+			<div class="col-sm-2">
+				<img src="/addon/resume/web/images/hczd_120_150.jpg"
+					style="width: 96%; padding: 2px;" />
+			</div>
+			<div class="col-sm-8">
+				<div>
+					<h1>胡成志</h1>
+				</div>
+				<div>
+					<h5>Java&Web开发工程师 - 金蝶国际软件集团有限公司</h5>
+				</div>
+				<div>
+					<span>深圳-南山区 </span><span>|</span><span>计算机软件</span><span> |</span><span>
+						高级研发工程师 </span><span>| </span><span> 工作 4 年以上 </span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-10 section-content">
+			<div id="section1">
+				<h1 class="groupTitle col-sm-10">联系方式</h1>
+				<div class="form-group">
+					<div class="col-sm-2 field_label">QQ</div>
+					<div class="col-sm-3">840989795</div>
+					<div class="col-sm-2 field_label">邮箱</div>
+					<div class="col-sm-3">hucz08@163.com</div>
+				</div>
+			</div>
+			<div id="section2">
+				<h1 class="groupTitle col-sm-10">在线留言</h1>				
+					<form action="/blog/save" method="post" class="col-sm-10">
+					<div class="form-group">						
+							<input type="hidden" name="blog.id" value="${(blog.id)!}" />
+							<div class="col-sm-2 field_label">标题</div>
+							<div class="col-sm-10">
+								<input type="text" name="blog.title" value="${(blog.title)!}" />${titleMsg!}
+							</div>
+							<div class="col-sm-2 field_label">内容</div>
+							<div class="col-sm-10">
+								<textarea name="blog.content" cols="80" rows="10">${(blog.content)!}</textarea>
+								${contentMsg!}
+							</div>
+							<div class="col-sm-2 field_label">&nbsp;</div>
+							<div class="col-sm-8">
+								<input value="提交" type="submit" style="float:right;" class="button">
+							</div>	
+							</div>					
+					</form>				
+			</div>
+		</div>
+	</div>
+</div>
+</@layout>

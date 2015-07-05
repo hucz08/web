@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="system_lib" systemlibrary="false"/>
+	<archive path="E:/Workspace/eclipse/web/lib/druid/druid-1.0.5.jar"/>
+</eclipse-userlibraries>

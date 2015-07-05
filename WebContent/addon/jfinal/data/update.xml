@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sytem name="compensation">	
+	<Data>KDHR003001_install_create_table.sql</Data>	
+	<Data>KDHR003001_install_init_data.sql</Data>
+	<Data>KDHR003001_install_init_data.xml</Data>
+</sytem>

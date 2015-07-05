@@ -1,0 +1,140 @@
+#container {
+	overflow-x: auto;
+	padding-bottom: 20px;
+}
+
+/* 薪酬标准属性 */
+.field-div {
+	float: left;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+.field-div .field-box {
+	width: 250px;
+	min-height: 300px;
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+.arrow-div {
+	padding: 140px 10px 0 10px;
+}
+
+.arrow-div i {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.select-box {
+	padding-top: 7px;
+}
+
+.select-box ul {
+	margin-left: 10px;
+}
+
+.select-box li {
+	list-style: none;
+	line-height: 20px;
+	cursor: pointer;
+	color: black;
+}
+
+.select-box li span {
+	padding: 0 4px;
+}
+
+.select-box li span:hover {
+	text-decoration: underline;
+}
+
+.selected {
+	background-color: #FFE6B0;
+	border: 1px solid #FFB951!important;
+	opacity: 0.8;
+}
+
+/* 薪酬标准设置 */
+.level-bar, .custom-table {
+	margin: 10px;
+}
+
+.level-bar .bar-label {
+	display: inline-block;
+	min-width: 80px;
+}
+
+.level-bar .level-radio {
+	margin-top: -3px;
+}
+
+.level-bar i, .level-bar .input-height, .level-bar .level-item {
+	margin: 0 8px!important;
+}
+
+.level-bar .input-height {
+	width: 50px;
+}
+
+.level-bar .level-item {
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 7px;
+	border: 1px solid white;
+}
+
+.level-bar .level-item-disable {
+	color: #ccc!important;
+}
+
+.level-bar .default-item {
+	color: blue;
+}
+
+#itemOp {
+	margin-left: 5px;
+}
+
+#itemOp i {
+	margin: 0 0 0 10px!important;
+}
+
+/* 自定义表格 */
+.custom-table tr {
+	height: 30px;	
+}
+
+.custom-table tr:nth-child(even) td {
+	background-color: #f9f9f9;
+}
+
+.custom-table th {
+	background-color: #EEE;
+}
+
+.custom-table th, .custom-table td {
+	border: 1px solid #ccc;
+}
+
+.custom-table td {
+	padding-left: 5px;
+}
+
+/* 薪等对应体系 */
+.level-select {
+	height: 15px!important;
+	margin-bottom: 0!important;
+}
+
+.tr-selected td {
+	background-color: rgb(220, 235, 250)!important;
+}
+
+.td-selected {
+	background: #357EBD!important;
+	color: white;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+<title>javaScript设计模式</title>
+<link href="/addon/sys/web/jslib/bootstrap-3.3.4/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="/addon/resume/web/css/widget.css" rel="stylesheet">
+<script src="/addon/sys/web/jslib/jquery-2.1.4.min.js"></script>
+<script src="/addon/sys/web/jslib/bootstrap-3.3.4/js//bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">javaScript设计模式</div>
+		<div id="main">
+			<h2>一、单例模式</h2>
+			<pre>
+var singleton = function(fn){
+    var result;
+    return function(){
+        return result || (result = fn.apply(this, arguments));
+    }
+};
+var createMask = singleton(function(){
+    return document.body.appendChild(document.createElement('div'));
+});</pre>
+			<p>用一个变量来保存第一次的返回值, 如果它已经被赋值过, 那么在以后的调用中优先返回该变量.
+				而真正创建遮罩层的代码是通过回调函数的方式传人到singleton包装器中的. 这种方式其实叫桥接模式. 关于桥接模式,
+				放在后面一点点来说.</p>
+			<p>然而singleton函数也不是完美的, 它始终还是需要一个变量result来寄存div的引用.
+				遗憾的是js的函数式特性还不足以完全的消除声明和语句.</p>
+		</div>
+		<div id="footer">
+			<h5>Copyright &copy; 胡成志&nbsp;2015</h5>
+		</div>
+	</div>
+	<script>
+		//$("script").remove();
+		//alert($("html").html());
+	</script>
+</body>
+</html>

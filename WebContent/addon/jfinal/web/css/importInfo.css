@@ -1,0 +1,24 @@
+.section-title {
+	color: #666;
+	font-weight: bold;
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.section-content {
+	margin: 8px 5px 40px 30px;
+}
+
+.ins-btn {
+	background-color: #428BCA;
+	border: 1px solid #428BCA;
+	color: white!important;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+}
+
+.ins-btn:hover {
+	background-color: #357EBD;
+	border: 1px solid #357EBD;
+}

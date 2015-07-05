@@ -1,0 +1,68 @@
+#timeline {
+	border-left: 1px solid #ccc;
+	padding-left: 40px;
+	padding-top: 30px;
+	margin-top: 150px;
+	margin-left: 80px;
+	margin-bottom: 30px;
+	height: 100%;
+}
+
+.month {
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+	max-width: 700px!important;
+	display: block!important;
+	position: relative!important;
+	line-height: 30px;
+}
+
+.month .timepoint {
+	position: absolute;
+	left: -100px;
+	color: #428bca;
+}
+
+.month .timepoint .time-month {
+	font-size: 17px;
+}
+
+.month .arrow {
+	top: 24px!important;
+}
+
+.month .scheme-title {
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.month .scheme-title .title {
+	font-weight: bold;
+}
+
+.month .scheme-title .time {
+	float: right;
+}
+
+.month .scheme-content {
+	padding: 10px;
+}
+
+.month .scheme-content .project {
+	display: inline-block;
+	min-width: 100px;
+	max-width: 100px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.month .scheme-content .pay {
+	display: inline-block;
+	min-width: 110px;
+	max-width: 110px;
+}
+
+.month .no-info {
+	padding: 20px;
+}

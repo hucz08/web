@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="web">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/perm/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/jfinal/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/cmp/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/user/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/tool/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/blog/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/sys/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/hr/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/resume/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/addon/app/src"/>
+        <property name="context-root" value="web"/>
+        <property name="java-output-path" value="/web/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="WebContent/addon/perm/src"/>
+	<classpathentry kind="src" path="WebContent/addon/app/src"/>
+	<classpathentry kind="src" path="WebContent/addon/resume/src"/>
+	<classpathentry kind="src" path="WebContent/addon/hr/src"/>
+	<classpathentry kind="src" path="WebContent/addon/sys/src"/>
+	<classpathentry kind="src" path="WebContent/addon/jfinal/src"/>
+	<classpathentry kind="src" path="WebContent/addon/cmp/src"/>
+	<classpathentry kind="src" path="WebContent/addon/user/src"/>
+	<classpathentry kind="src" path="WebContent/addon/tool/src"/>
+	<classpathentry kind="src" path="WebContent/addon/blog/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_55">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/system_lib"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/druid/druid-1.0.5.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/log4j/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/c3p0/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/cos-oreilly/cos-26Dec2008.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/ehcache/ehcache-core-2.5.2.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/ehcache/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/ehcache/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/freemarker/freemarker-2.3.20.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/JSTL_for_JSP/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/JSTL_for_JSP/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/mysql/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/oracle/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/spring/org.springframework.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/sqlite/sqlite-jdbc-3.7.2.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/velocity/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/velocity/velocity-1.7-dep.jar"/>
+	<classpathentry kind="lib" path="E:/Workspace/eclipse/web/lib/jetty/jetty-server-8.1.8.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

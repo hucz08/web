@@ -1,0 +1,82 @@
+.person_list_table{}
+.person_list_table tr td:FIRST-CHILD {width:160px;}
+.person_list_table tr td:FIRST-CHILD .imgico{margin: 0 auto; width:60px; float:left;}
+.person_list_table tr td:FIRST-CHILD .imgico img{width:50px;height:50px;}
+.person_list_table tr td:FIRST-CHILD .msgright{ margin-right:70px; width:90px;}
+.person_list_table tr{border: solid #CCC 1px;}
+.person_list_table p{margin:1px;}
+.br{}
+.btn-label{background: none;margin:1px; color:#428bca; text-decoration: underline;}
+.btn-label:HOVER {background: none;color:red; text-decoration: underline;}
+.none{display:none;}
+.btn-tab-div{height:24px;border-bottom:solid 1px #CCC;}
+.btn-tab-div1{float:left;width:800px;margin-left:10px;}
+.btn-tab-div2{margin-left:200px;}
+.btn-tab{background: #FFF;margin-left:-2px;margin-right:0px;color:#ccc;}
+.btn-tab:HOVER{background: #FFF;margin-left:-2px;margin-right:0px;color:#428bca;}
+.btn-tab-current {background: #FFF;border:solid 1px #CCC; border-bottom: none;margin-left:-2px;margin-right:0px;color:#428bca;height:25px;}
+
+.checkout_div{width:400px;float:left;}
+.select_mul{width:100%;}
+
+.shr_label{display: block;float:left;padding:2px 5px;text-decoration: underline;color:#428bca}
+.shr_label:HOVER ,.shr_label_curr{color:red;}
+
+.schemeDiv{border:solid 1px #E4E4E4; padding:10px; margin:5px; cursor: pointer;}
+.schemeDiv:HOVER{background:#EEE;}
+.schemeDiv .schemeLeft{float: left; width:80px; height:120px;}
+.schemeDiv .schemeLeft img{width:70px;}
+.schemeDiv p{height:20px;}
+.schemeDiv .schemeTitle{font-weight: bold;font-size: 14px;color:#666;}
+.schemeDiv .isSelect{border-radius:10px; border:solid 1px #CCC;float: right; color:#FFF;}
+.schemeDiv.selected{background:#D9EDF7;}
+.schemeDiv.selected .isSelect {background: #2489C5; color:#FFF;}
+.schemeDiv .schemeCountLink{height:20px;line-height: 20px; float:right;font-weight: bold;color:#333;}
+
+.PCountDiv{width:25%; float:left;}
+.personCountDiv{border:dotted 1px #E4E4E4; margin:10px;padding:10px;height:120px;cursor: pointer;}
+.personCountDiv:HOVER{background:#EEEEEE}
+.personCountDiv .personCountTitle{font-weight: bold;font-size: 14px;color:#428BCA;height:20px;}
+.personCountDiv .personCountContent{height:80px;}
+.personCountDiv .personCountLink{height:20px;line-height: 20px; float:right;}
+.finishDiv {
+    float: left;
+    color: #b4b4b4;
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    position: relative;   
+}
+.finishButton{
+	float: left;
+    font-size: 30px;  
+    width: 50px;
+    text-align: left;
+    vertical-align: middle;
+    margin-top:20px;;
+	margin-left:-15px;;
+	height:30px;;
+	line-height:30px;;
+	width:50px;;
+	font-size:12px;;
+	border-radius:30px/20px;
+	background:#FFFFFF;;
+	text-align:center;;
+	color:#b4b4b4;;
+	border:solid 2px #b4b4b4;;
+}
+.finishDiv .finishButton span{
+    height: 100%;
+    display: inline-block;
+    line-height: 50px;
+    font-weight: bold;
+    line-height:30px;
+}
+.finishButton .selected{
+	color: #08c;
+    border-bottom: 2px solid #08c;
+    background: #08c;;
+}
+.ui-jqgrid .ui-jqgrid-hdiv {
+	background: none!important;
+}

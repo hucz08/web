@@ -1,0 +1,75 @@
+.field-div {
+	float: left;
+	margin-top: 15px;
+}
+
+.field-div .field-box {
+	width: 300px;
+	min-height: 500px;
+	max-height: 500px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+.arrow-div {
+	padding: 230px 25px 0 25px;
+}
+
+.arrow-div i {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#selectTree {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#selectTree li {
+	list-style-type: none;
+	line-height: 18px;
+}
+
+#selectTree .text-span {
+	min-width: 180px;
+	max-width: 180px;
+	min-height: 14px;
+	margin-right: 10px;
+	padding: 0 5px;
+}
+
+#selectTree .text-span:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#selectTree .selected {
+	background-color: #FFE6B0;
+	border: 1px #FFB951 solid;
+	opacity: 0.8;
+}
+
+
+#container {
+	padding: 0!important;
+}
+
+#addTempDiv {
+	padding: 10px;
+	padding-left: 60px;
+}
+
+.ins-btn {
+	background-color: #428BCA;
+	border: 1px solid #428BCA;
+	color: white!important;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+}
+
+.ins-btn:hover {
+	background-color: #357EBD;
+	border: 1px solid #357EBD;
+}
